@@ -1,0 +1,58 @@
+html.js {
+	
+    background-image: url("http://american-gpc.com/images/wind_energy.jpg");
+}
+
+html.js {
+    background-attachment: fixed;
+    background-color: #000000;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html, body, div {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#zone-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 981px;
+    height: 500px;
+}
+
+#zone-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.35);
+}
+div {
+    font-family: sourcesansproregular;
+}
+.header {
+	width: 100%;
+}
+.mainflg {
+    background-image: url("http://american-gpc.com/images/500_183.png");
+    display: block;
+    height: 183px;
+    width: 500px;
+    float: left;
+    }
+    
+    .logoadg {
+	    
+	height: 132px;
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 132px;
+    }

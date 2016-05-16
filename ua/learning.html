@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="js" lang="en" dir="ltr">
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>American Green Power Corporation</title>
+
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//unslider.com/unslider.min.js"></script>
+
+
+
+</head>
+
+<body>
+<script type="text/javascript">
+
+	//new function for cookie
+	function getCookie(name) {
+		var matches = document.cookie.match(new RegExp(
+				"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+		));
+		return matches ? decodeURIComponent(matches[1]) : undefined;
+	}
+
+	function setCookie(name, value, props) {
+		props = props || {};
+		var exp = props.expires;
+		if (typeof exp == "number" && exp) {
+			var d = new Date();
+			d.setTime(d.getTime() + exp*1000);
+			exp = props.expires = d;
+		}
+		if(exp && exp.toUTCString) { props.expires = exp.toUTCString(); }
+
+		value = encodeURIComponent(value);
+		var updatedCookie = name + "=" + value;
+		for(var propName in props){
+			updatedCookie += "; " + propName;
+			var propValue = props[propName];
+			if(propValue !== true){ updatedCookie += "=" + propValue; }
+		}
+		document.cookie = updatedCookie + ';path=/american-gpc';//todo get info about props args
+	}
+
+	$(document).ready(function() {
+		$(".dropdown img.flag").addClass("flagvisibility");
+
+		$(".dropdown dt a").click(function() {
+			$(".dropdown dd ul").toggle();
+		});
+
+		$(".dropdown dd ul li a").click(function() {
+			var text = $(this).html();
+			$(".dropdown dt a span").html(text);
+			$(".dropdown dd ul").hide();
+			$("#result").html("Selected value is: " + getSelectedValue("sample"));
+		});
+
+		function getSelectedValue(id) {
+			return $("#" + id).find("dt a span.value").html();
+		}
+
+		$(document).bind('click', function(e) {
+			var $clicked = $(e.target);
+			if (! $clicked.parents().hasClass("dropdown"))
+				$(".dropdown dd ul").hide();
+		});
+		$('.lang_href').click(function(){
+			var langname = $(this).prop('lang');console.log(langname);
+			setCookie('lang',langname);
+		});
+
+
+	});
+
+	/*jQuery time*/
+	$(document).ready(function(){
+		$("#accordian h3").click(function(){
+			//slide up all the link lists
+			$("#accordian ul ul").slideUp();
+			//slide down the link list below the h3 clicked - only if its closed
+			if(!$(this).next().is(":visible"))
+			{
+				$(this).next().slideDown();
+			}
+		})
+	})
+</script>
+<script>
+	$(function() {
+		$('.banner').unslider({
+			speed: 1000,               //  The speed to animate each slide (in milliseconds)
+			delay: 6000,              //  The delay between slide animations (in milliseconds)
+			complete: function() {},  //  A function that gets called after every slide animation
+			keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+			dots: true,               //  Display dot navigation
+			fluid: false              //  Support responsive design. May break non-responsive designs
+
+		});
+
+	});
+</script>
+
+<div id="page" class="page clearfix">
+
+	<div id="zone-content">
+		<header>
+			<div class="header">
+				<div class="mainflg">
+					<img class="logoadg" src="../images/usa_made.png" />
+					<img class="logoadgowl" src="../images/png_owl.png" />
+					<div class="mainslogan">
+						<a href="/"><span class="logofrmt">American Green Power </span><span class="logofrmt resz2">&reg;</span><br /><span class="logofrmt resz">Corporation</span></a>
+					</div>
+					<div class="languagedrpdwm">
+						<dl id="sample" class="dropdown">
+							<dt><a href="#"><span>Please select your language</span></a></dt>
+							<dd>
+								<ul>
+									<li><a class="lang_href" lang="eng" href="../eng">United States<img class="flag" src="../css/flagimg/us.png" alt="" /><span class="value">US</span></a></li>
+									<li><a class="lang_href" lang="ua" href="../ua">Ukraine<img class="flag" src="../css/flagimg/ue.png" alt="" /><span class="value">UE</span></a></li>
+									<li><a class="lang_href" lang="ru" href="../ru">Russia<img class="flag" src="../css/flagimg/by.png" alt="" /><span class="value">BY</span></a></li>
+									<li><a class="lang_href" lang="cz" href="#">Chezch<img class="flag" src="../css/flagimg/ch.png" alt="" /><span class="value">CH</span></a></li>
+								</ul>
+							</dd>
+						</dl>
+						<span id="result"></span>
+					</div>
+				</div>
+			</div>
+			<div class="menumain">
+				<div>
+					<ul>
+
+						<li class="menuli"><a href="./" class="menulink">ДОМІВКА</a></li>
+						<li class="menuli"><a href="./" class="menulink">ПРОДУКТИ</a></li>
+						<li class="menuli"><a href="./" class="menulink">ФІЛІЇ</a></li>
+						<li class="menuli"><a href="about.html" class="menulink">ПРО НАС</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+
+
+		<div class="pagecont">
+
+			<div class="maincont">
+				<div class="clear"></div>
+				<div class="navcolumn">
+					<div id="accordian">
+						<ul>
+							<li class="active">
+								<h3><span class="icon-dashboard"></span>Solar Energy</h3>
+								<ul>
+									<li><a href="solar-panels.html">Solar Panels</a></li>
+									<li><a href="spice-solar.html">Spice Solar</a></li>
+									<li><a href="micro-inverter.html">Micro Inverter</a></li>
+									<li><a href="gateway.html">Gateway</a></li>
+									<li><a href="cloud-monitoring-system.html">Cloud Monitoring System</a></li>
+									<li><a href="learning.html">Learn</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- we will keep this LI open by default -->
+
+
+
+					</div>
+				</div>
+				<div class="maintextprod">
+
+					<h2>Типова “Series String” панель </h2>
+
+					<p>Більшість сонячних панелей, встановлених в світі зараз налаштовані:  з одним великим інвертором і однією великою напругою постійного струму.
+						При напрузі в 600 вольт панелі почнуть іскритись, це може призвести до пожежі.
+						(Ось чому ви не повинні ніколи скупитись на вартості установки)</p>
+					<br />
+					<img src="../images/solarpanelsimages/solar-panel-array-DC-153_2.jpg">
+
+					<h2>Типова "AC Solar Panel or Micro Inverter" панель</h2>
+
+					<img src="../images/solarpanelsimages/solar-panel-array-DC-153_3.jpg">
+
+					<h2>Чим хороша "AC Solar Panel or Micro Inverter" панель?</h2>
+
+					<p>Існує ряд складнощів, викликаних традиційним способом підключення сонячних
+						панелей одна з одною, які мікро-інвертори можуть допомогти подолати, включаючи:</p>
+
+					<h3>Високу напругу постійного струму</h3>
+
+					<p>Висока напруга постійного струму може створити ризик дуже високої температури електричної дуги і потенційно пожежі.
+						Тому що, мікро-інвертори перетворюються в змінний потенціал, для того, щоб стати значно мінімізованими.</p>
+
+					<h3>Розподільчий пристрій</h3>
+
+					<p>Висока напруга постійного струму вимагає дорогих захисних вимикачів і запобіжників.
+						За допомогою змінного струму, розподільчий пристрій є найбільш доступними і, отже, дешевшим.</p>
+
+					<h3>Затінення</h3>
+
+					<p>Коли сонячні панелі з'єднані один з одним в SERIES STRING, тільки один з них затінений може істотно вплинути на всю кількість.<br /> <br />
+
+						Як приклад: Ось масив з 3 сонячних панелей, з'єднаних зі звичайним, центральним інвертором. На одну з панелей «наклали» птиці ,
+						а це може легко зменшити обсяги виробництва на 50%.
+						Тим не менш, він може також скоротити виробництво і будь-якої іншої панелі на ту ж суму.</p>
+					<br /><br />
+
+					<img src="../images/solarpanelsimages/solar-shade-central_4.jpg">
+					<br />
+					<br />
+					<p>Але, маючи мікро-інвертора на кожній сонячної панелі, виходи повністю незалежні один від одного.
+						Так що, пташині  відходи впливатимуть тільки на забруднені панелі: </p>
+					<br />
+					<img src="../images/solarpanelsimages/solar-shade-micro_5.jpg">
+					<br />
+					<br />
+					<p>За даними американської Національної лабораторії поновлюваних джерел енергії, цей ефект може дати аж на 12% більше енергії.</p>
+
+					<h3>Розбіжність панелів сонячних батерей</h3>
+
+					<p>Коли сонячні панелі виготовлені, то кожен з них мають по кілька різних електричних характеристик через розбіжність виробничих допусків.
+						При підключенні їх в рядок серії, цей ефект називається "розбіжністю". Мікро-Інвертори можуть адаптуватися до індивідуальних
+						особливостей кожної панелі, щоб уникнути цих невідповідності.</p>
+
+					<h3>Відстеження точки максимальної потужності</h3>
+
+					<p>Як ефект розбіжності, різні електричні характеристики можуть також створювати різні максимальні значення потужності точки для кожної
+						панелі сонячних батарей. Максимальне значення потужності, є ідеальним моментом для вилучення максимальної потужності з панелі
+						сонячних батарей і мікро-інверторів, прикріплених до окремих панелей сонячних батарей, тому можна орієнтувати цей пункт краще.</p>
+
+					<h3>Моніторинг та усунення несправностей</h3>
+
+					<p>Майже всі інвертори мають певний рівень моніторингу та пошуку несправностей, проте, можна побачити комбінований вихід
+						з кожної панелі сонячних батарей в рядку серії. Однак, мікро-інвертор може контролювати кожну панель сонячних батарей
+						окремо, що дозволяє легко визначити точно, що відбувається швидше.</p>
+
+					<h3>Надмірність</h3>
+
+					<p>Якщо ваш SERIES STRING інвертор виявить недолік, вся сонячна батарея перестає виробляти енергію, поки він не буде усунений.
+						Якщо мікро- інвертор виявляє несправності, інші Micro Інвертори можуть продовжувати працювати, тому ви повинні мати більш
+						надійну систему.</p>
+
+					<h3>Модульність</h3>
+
+					<p>SERIES STRING INVERTERS можуть приймати тільки певну кількість панелей сонячних батарей на інверторі,
+						так що не завжди можна пізніше просто додати кілька панелей.
+						Хоча,  AC Панелі сонячних батарей, можуть додаватись набагато легше, тому що вони не залежать один від одного.</p>
+
+					<h3>Триваліша гарантія</h3>
+
+					<p>Так, як мікро-інвертори не зазнають таких високих електричних і теплових навантажень в якості центрального інвертора,
+						вони  мають тенденцію тривати значно довше. Мікро-перетворювачі зазвичай поставляються з гарантією 20-25 років - 15-20 років довше,
+						ніж центральні інвертори.</p>
+
+					<h3>Відстеження точки максимальної потужності(MPPT)</h3>
+
+					<p>Одна зі складних речей про сонячних батарей є те, що напруга повинна бути відрегульована до рівня освітленості для максимальної
+						вихідної потужності. Іншими словами, продуктивність панелі сонячних батарей залежить від навантаження напруги, що подається від
+						інвертора. MPPT це метод, який використовується, щоб знайти правильну напруга - точку максимальної потужності.
+						MPPT застосовується  до кожної окремої панелі, на відміну від Сонячної системи в цілому, тому і продуктивність
+						буде природним чином зростати.</p>
+
+					<h3>Звіти про виконання</h3>
+
+					<p>Веб-моніторинг на основі панель за панеллю, як правило, доступний для домовласників.
+						Постійно аналізуючи стан Сонячної системи може прокласти шлях для додаткових налаштувань
+						і покращення продуктивності. Є навіть мобільні додатки, які дозволяють вам контролювати
+						вашу систему PV, коли ви в дорозі.</p>
+				</div>
+
+			</div><!-- end of pagecont --></div><!-- end of pagecont -->
+
+		<div class="footercontainer">
+
+			<div class="footersecondcont">
+
+				<div class="contone">
+					<div class="lefttoplinefooter"></div>
+					<div class="leftbottomlinefooter">
+								<span class="rightspanalign"><a href="https://www.facebook.com/americangreenpowercorp"><img src="../images/footerpics/40px-Facebook_Logo.png"></a>
+								<a href="https://www.linkedin.com/profile/view?id=384901050"><img src="../images/footerpics/linked.png"></a>
+								<a href="skype:echo123?call"><img src="../images/footerpics/skype_icon.png"></a>
+
+								</span>
+
+					</div>
+				</div>
+
+				<div class="minilogofooter"><img src="../images/footerpics/minifooterlogo.png" /></div>
+
+				<div class="conttwo">
+					<div class="righttoplinefooter"></div>
+					<div class="rightbottomlinefooter">
+								<span class="rightspanalign"><p>US Federal Tax ID #: 47-2122528</p><br /><p>1717 Pennsylvania Ave NW Suite 1025, Washington, DC 20006</p>
+								<p>Tel: +1 (202) 559 9042</p>
+								<p class="emailtocls">Email: <script language='javascript' type='text/javascript'>
+									var a = new Array('&#45;&#103;&#112;&#99;&#46;&#99;&#111;&#109;','&#101;&#32;&#105;&#110;&#102;&#111;&#32;&#102;&#114;&#111;&#109;&#32;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;&#x3f;&#x73;&#x75;&#x62;&#x6a;&#x65;&#x63;&#x74;&#x3d;&#x4d;&#x6f;&#x72;');
+									document.write("<a href='"+a[2]+a[3]+a[1]+a[0]+"'>"+"&#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6d;&#x65;&#x72;&#x69;&#x63;&#x61;&#x6e;&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;"+"<"+"/a>");
+								</script></p>
+								</span>
+					</div>
+				</div>
+
+			</div><!-- end of footersecondcont -->
+
+			<div class="bottommainlinefooter"><span>Privacy Policy | External Links | Web Design by Webatask.com</span></div>
+
+		</div>	<!-- END of .footercontainer -->
+
+	</div> <!-- END of .zone-content -->
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>

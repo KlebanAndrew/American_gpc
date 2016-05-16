@@ -1,0 +1,257 @@
+ <!DOCTYPE html>
+<html class="js" lang="en" dir="ltr">
+<head>
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>American Green Power Corporation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+
+        });
+
+        /*jQuery time*/
+$(document).ready(function(){
+	$("#accordian h3").click(function(){
+		//slide up all the link lists
+		$("#accordian ul ul").slideUp();
+		//slide down the link list below the h3 clicked - only if its closed
+		if(!$(this).next().is(":visible"))
+		{
+			$(this).next().slideDown();
+		}
+	})
+})
+    </script>
+
+ 
+</head>
+
+<body>
+ 
+	<div id="page" class="page clearfix">
+		
+			<div id="zone-content">
+			<header>
+				<div class="header">
+					<div class="mainflg">
+						<img class="logoadg" src="images/usa_made.png" />
+						<img class="logoadgowl" src="images/png_owl.png" />
+					<div class="mainslogan">
+						<a href="/"><span class="logofrmt">American Green Power </span><span class="logofrmt resz2">&reg;</span><br /><span class="logofrmt resz">Corporation</span></a>
+					</div>
+						<div class="languagedrpdwm">
+<dl id="sample" class="dropdown">
+        <dt><a href="#"><span>Please select your language</span></a></dt>
+        <dd>
+            <ul>
+                <li><a href="#">United States<img class="flag" src="css/flagimg/us.png" alt="" /><span class="value">US</span></a></li>
+                <li><a href="http://american-gpc.com/ue/about.html">Ukraine<img class="flag" src="css/flagimg/ue.png" alt="" /><span class="value">UE</span></a></li>
+                <li><a href="#">Belarus<img class="flag" src="css/flagimg/by.png" alt="" /><span class="value">BY</span></a></li>
+                <li><a href="#">Chezch<img class="flag" src="css/flagimg/ch.png" alt="" /><span class="value">CH</span></a></li>
+            </ul>
+        </dd>
+    </dl>
+    <span id="result"></span>
+					</div>
+				</div>
+				<div class="menumain">
+					<div>
+						<ul>
+						
+						<li class="menuli"><a href="http://american-gpc.com" class="menulink">HOME</a></li>
+						<li class="menuli"><a href="http://american-gpc.com" class="menulink">PRODUCTS</a></li>
+						<li class="menuli"><a href="http://american-gpc.com" class="menulink">AFFILIATES</a></li>
+						<li class="menuli"><a href="/about.html" class="menulink">ABOUT US</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		
+		
+						
+		<div class="maincont">
+<div class="clear"></div>
+					<div class="navcolumn">
+					<div id="accordian">
+						<ul>
+						<li class="active">
+							<h3><span class="icon-dashboard"></span>Solar Energy</h3>
+						<ul>
+							<li><a href="solar-panels.html">Solar Panels</a></li>
+							<li><a href="spice-solar.html">Spice Solar</a></li>
+							<li><a href="micro-inverter.html">Micro Inverter</a></li>
+							<li><a href="gateway.html">Gateway</a></li>
+							<li><a href="cloud-monitoring-system.html">Cloud Monitoring System</a></li>
+							<li><a href="learning.html">Learn</a></li>
+						</ul>
+						</li>
+						<!-- we will keep this LI open by default -->
+
+
+
+					</div>
+			</div>
+		<div class="maintextprod">
+
+			<div class="leftsidetext">
+				<div class="marginwrap">
+					<h2>AXN6p Series</h2>
+
+					<h3>230-270 WATT</h3>
+					<h3>HIGH QUALITY POLY-CRYSTALLINE PV MODULES</h3>
+					<strong>AVAILABLE IN BOTH STANDARD AND BLACK ON BLACK.</strong>
+					<strong>AUXIN SOLAR®</strong>
+					
+					<p>Using automated production lines, top of the line solar cells and materials
+					complying to highest industry standards, Auxin Solar provides a complete
+					set of poly and mono-crystalline PV modules ranging from 10W to 360W.<br /> <br />
+					Auxin Solar offers panels for use in small off-grid systems to the largest
+					on-grid solar farms. Panels are tested and qualified for the severest
+					weather conditions.</p>
+				</div>
+
+
+			</div> <!-- close leftsidetext -->
+
+			<div class="rightsidetext">
+				<img src="images/solarpanelsimages/AXN6P610T_230_270.jpg">
+			</div><!-- close rightsidetext -->
+
+			<div class="leftsidetext">
+
+				<div class="solartablecss1">
+					<table>
+					<tr><td>FEATURES</td><td>BENEFITS</td></tr>
+					<tr><td>Solar module efficiency up to 16.5%</td><td>Generate more energy per square
+					meter</td></tr>
+					<tr><td>Protective, Bypass diodes</td><td>Avoids effect of partial shading</td></tr>
+					<tr><td></td><td></td></tr>
+					<tr><td>White tempered glass
+					EVA resin
+					Weather proof film
+					Anodized aluminum frame</td><td>Resilient to harsh weather
+					conditions</td></tr>
+					<tr><td>Highest standards in manufacturing
+					and design quality
+					Cleanroom-like production line
+					ISO9001:2008</td><td>Optimal panel performance
+					Long term product performance</td></tr>
+					</table>
+				</div>
+
+			</div><!-- close leftsidetext -->
+
+			<div class="rightsidetext">
+				<div class="specscls1solar">
+					<div class="specslr1">
+						<span> QUALITY ASSURANCE</span><br />
+					- Backed by liability insurance<br />
+					- Salt Mist Corrosion Certified<br />
+					- Wind Resistance Load: 6000Pa<br />
+					- ISO9001:2008<br />
+					- Electrical insulation test<br />
+					- Outdoor exposure test<br />
+					- Hot spot endurance test<br />
+					- UV exposure IEC61345<br />
+					- Thermal cycling<br />
+					- Humidity freeze<br />
+					- Damp heat test<br />
+					- Robustness of termination test<br />
+					- Wet leakage current test<br />
+					- Mechanical load test<br />
+					- Hail impact test<br />
+					- Bypass diode thermal test
+					</div>
+
+					<div class="specslr1">
+						<span>INVESTMENT PROTECTION</span><br />
+					- 5 years product workmanship guarantee<br />
+					- 12 years 90% power output warranty<br />
+					- 25 years 80% power output warranty<br />
+					</div>
+				</div> <!-- close specscls1solar -->
+			</div><!-- close rightsidetext -->
+
+
+
+<div class="specsforsolarcss">
+	<img src="images/solarpanelsimages/table2.jpg" style="width:700px;">
+	<img src="images/solarpanelsimages/table3.jpg" style="width:700px;">
+	<img src="images/solarpanelsimages/table4.jpg" style="width:700px;">
+
+</div>				
+		</div><!-- end of maintextprod -->
+						
+		</div><!-- end of pagecont -->
+			
+				<div class="footercontainer">
+				
+				<div class="footersecondcont">
+				
+					<div class="contone">
+							<div class="lefttoplinefooter"></div>
+							<div class="leftbottomlinefooter">
+								<span class="rightspanalign"><img src="images/footerpics/40px-Facebook_Logo.png"><img src="images/footerpics/linked.png"></span>
+								
+							</div>
+					</div>
+					
+						<div class="minilogofooter"><img src="images/footerpics/minifooterlogo.png" /></div>
+						
+						<div class="conttwo">
+							<div class="righttoplinefooter"></div>
+							<div class="rightbottomlinefooter">
+								<span class="rightspanalign"><p>US Federal Tax ID #: 47-2122528</p><br /><p>1717 Pennsylvania Ave NW Suite 1025, Washington, DC 20006</p>
+								<p>Tel: +1 (202) 559 9042</p>
+								<p class="emailtocls">Email: <script language='javascript' type='text/javascript'>
+var a = new Array('&#45;&#103;&#112;&#99;&#46;&#99;&#111;&#109;','&#101;&#32;&#105;&#110;&#102;&#111;&#32;&#102;&#114;&#111;&#109;&#32;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;&#x3f;&#x73;&#x75;&#x62;&#x6a;&#x65;&#x63;&#x74;&#x3d;&#x4d;&#x6f;&#x72;');
+document.write("<a href='"+a[2]+a[3]+a[1]+a[0]+"'>"+"&#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6d;&#x65;&#x72;&#x69;&#x63;&#x61;&#x6e;&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;"+"<"+"/a>");
+</script></p>
+								</span>
+							</div>
+						</div>	
+					
+				</div><!-- end of footersecondcont -->
+					
+					<div class="bottommainlinefooter"><span>Privacy Policy | External Links | Web Design by Webatask.com</span></div>
+			
+				</div>	<!-- END of .footercontainer -->
+			
+	</div> <!-- END of .zone-content -->
+
+
+		
+
+		
+	</div>
+	
+	<!-- prefix free to deal with vendor prefixes -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
+</body>
+
+</html> 

@@ -1,0 +1,546 @@
+html.js {
+	
+    background-image: url("http://american-gpc.com/images/wind_energy.jpg");
+}
+
+html.js {
+    background-attachment: fixed;
+    background-color: #000000;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html, body, div {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+.emailtocls a {
+    text-decoration: none;
+    color: white;
+}
+.emailtocls a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#zone-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 981px;
+    height: 100%;
+}
+
+#zone-content {
+    background-color: #FEFEFE;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.35);
+}
+div {
+    font-family: sourcesansproregular;
+}
+.header {
+	width: 100%;
+}
+.mainflg {
+    background-image: url("http://american-gpc.com/images/top_header_final.jpg");
+    display: block;
+    height: 242px;
+    width: 981px;
+    float:left;
+    }
+    
+    .menumain li+li { 
+    
+    border-left: 1px solid #000000 
+	    
+    } 
+	    
+    
+.mainboxbg{
+	 background-image: url("http://american-gpc.com/images/box_bg.png");
+	     height: 334px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 244px;
+   } 
+   
+   .mainboxbg:hover {
+	  	 background-image: url("http://american-gpc.com/images/box2_bg.png");
+	     height: 334px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 244px; 
+   }
+   
+   .topboxbg {
+	   background-image: url("http://american-gpc.com/images/top_box_bg.jpg");
+	   height: 48px;
+	   display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 223px;
+    color: #f9f9f9;
+   }
+   .topboxtxt {
+	display: table-cell;
+    font-size: 18px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+   }
+   
+.logoadg {
+	    
+    display: block;
+    margin-left: 160px;
+    margin-top: 213px;
+    position: absolute;
+    }
+    
+    .logoadgowl {
+	float: right;
+    margin-top: 25px;
+    }
+    
+.mainslogan {
+ 	float: left;
+    font-size: 39px;
+    line-height: 20px;
+    margin-left: 260px;
+    margin-top: 7%;
+    text-align: right;
+    }
+
+	    .site-name {
+    margin: 0;
+    padding: 0;
+    }
+    
+    a, p, ul, ol, li, img, span, strong, em {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+.logofrmt {
+	  color: white;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.mainslogan a {
+    text-decoration: none;
+}
+.resz {
+	font-size: 24px;
+}
+.resz2 {
+	font-size: 12px;
+}
+
+.menumain {
+	background: none repeat scroll 0 0 #03244b;
+	clear: both;
+    display: block;
+    height: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+.menumain li a {
+   color: #ffffff;
+    font-family: "SourceSansProRegular";
+    font-size: 15px;
+    padding: 10px 60px 5px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+
+li.menuli {
+    clear: none;
+    display: block;
+    float: left;
+    height: 35px;
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+li.menuli:hover {
+background-color: #023d6c;
+}
+
+
+ul {
+    list-style: outside none disc;
+}
+
+.featurebox1 {
+width: auto;
+height: auto;
+float: left;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.featurebox {
+width: auto;
+height: auto;
+float: left;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.pagecont {
+  	 display: table;
+   	margin: 0 auto;
+     padding-bottom: 30px;
+    padding-top: 40px;
+    height: auto;
+}
+
+.maincont {
+   	margin: 0 auto;
+     padding-bottom: 30px;
+    padding-top: 20px;
+    height: auto;
+    display: table;
+}
+
+.featurebox p {
+    color: #0c2a54 !important;
+    font-size: 12px;
+    margin-top: -22px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+.featurebox1 p {
+    color: #0c2a54 !important;
+    font-size: 12px;
+    margin-top: -22px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.featureBoxImg {
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    margin-bottom: 35px;
+}
+
+.featurebox a {
+    color: #0c2a54;
+    text-decoration: none;
+}
+
+.featurebox1 a {
+    color: #0c2a54;
+    text-decoration: none;
+}
+
+/* How to set width and height in non-responsive istances */
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+        
+      .footercontainer {
+    background-color: #17102d;
+    height: 150px;
+    width: 100%;
+        -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+/* ~~~~~~ Footer Classes  ~~~~  */
+
+
+.footersecondcont {
+width: 100%;
+	
+}
+
+
+
+
+.featurebox1:hover {
+
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+
+}
+
+
+.featurebox:hover {
+
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+
+}
+
+
+.boxpicalgn {
+	padding-left: 21px;
+    padding-top: 15px;
+}
+
+.lefttoplinefooter {
+
+    float: left;
+    height: 32px;
+    width: 459px;
+      position: relative;
+  z-index : 1;
+	
+}
+
+.leftbottomlinefooter {
+
+    clear: both;
+    float: left;
+    height: 94px;
+    width: 459px;
+    display:table;
+	
+}
+
+.minilogofooter {
+
+    float: left;
+    height: 63px;
+    width: 63px;
+	
+}
+
+.righttoplinefooter {
+
+    float: left;
+    height: 32px;
+    width: 459px;
+      position: relative;
+  z-index : 1;
+	
+}
+
+.rightbottomlinefooter {
+  
+    clear: both;
+    color: #f9f9f9;
+    float: left;
+    font-size: 12px;
+    height: 94px;
+    text-align: center;
+    width: 459px;
+    display:table;
+	
+}
+
+.bottommainlinefooter {
+
+    clear: both;
+    color: #f9f9f9;
+    float: left;
+    font-size: 10px;
+    height: 24px;
+    text-align: center;
+    width: 981px;
+	
+}
+.contone {
+
+    float: left;
+    height: 126px;
+    width: 459px;
+}
+.conttwo {
+
+    float: left;
+    height: 126px;
+    width: 459px;
+}
+
+.lefttoplinefooter:before {
+    border-bottom: 1.5px solid #f9f9f9;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 20px;
+    position: absolute;
+    width: 93%;
+}
+.righttoplinefooter:before {
+    border-bottom: 1.5px solid #f9f9f9;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    right: 20px;
+    position: absolute;
+    width: 93%;
+}
+
+.rightspanalign {
+	display: table-cell;
+    font-size: 12px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+	
+}
+
+.rightspanalign img {
+	padding: 10px;
+	
+}
+.languagedrpdwm {
+    color: #000;
+    float: right;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.75em;
+    margin-right: -270px;
+    margin-top: -10px;
+}
+
+
+
+        .desc { color:#6b6b6b;}
+        .desc a {color:#0092dd;}
+        
+        .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
+        .dropdown dd { position:relative; }
+        .dropdown a, .dropdown a:visited { color:#816c5b; text-decoration:none; outline:none;}
+        .dropdown a:hover { color:#5d4617;}
+        .dropdown dt a:hover { color:#5d4617; border: 1px solid #d0c9af;}
+        .dropdown dt a {background:#e4dfcb url(flagimg/arrow.png) no-repeat scroll right center; display:block; padding-right:20px;
+                        border:1px solid #d4ca9a; width:170px;}
+        .dropdown dt a span {cursor:pointer; display:block; padding:5px;}
+        .dropdown dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                          left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:170px; list-style:none;}
+        .dropdown span.value { display:none;}
+        .dropdown dd ul li a { padding:5px; display:block;}
+        .dropdown dd ul li a:hover { background-color:#d0c9af;}
+        
+        .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
+        .flagvisibility { display:inline-block;}
+
+
+.navcolumn {
+    /*background: #4EB889; */
+    font-family: Nunito, arial, verdana;
+        margin-left: 10px;
+    width: 200px;
+    float: left;
+
+}
+
+/*custom font for text*/
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+/*CSS file for fontawesome - an iconfont we will be using. This CSS file imported contains the font-face declaration. More info: http://fortawesome.github.io/Font-Awesome/ */
+@import url(http://thecodeplayer.com/uploads/fonts/fontawesome/css/font-awesome.min.css);
+
+#accordian {
+    background: #004050;
+    width: 200px;
+    margin: 0px auto 0 auto;
+    color: white;
+    /*Some cool shadow and glow effect*/
+    box-shadow: 
+        0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+        0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+/*heading styles*/
+#accordian h3 {
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 10px;
+    cursor: pointer;
+    /*fallback for browsers not supporting gradients*/
+    background: #003040; 
+    background: linear-gradient(#003040, #002535);
+}
+/*heading hover effect*/
+#accordian h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#accordian h3 span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+/*list items*/
+#accordian li {
+    list-style-type: none;
+}
+/*links*/
+#accordian ul ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 27px;
+    display: block;
+    padding: 0 15px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+    background: #003545;
+    border-left: 5px solid lightgreen;
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+    display: none;
+}
+#accordian li.active ul {
+    display: block;
+}
+
+.clear {
+  clear: left;
+}
+.maintextprod {
+    float: left;
+    margin-left: 30px;
+    width: 70%;
+}
+
+.rightsidetext {
+    float: left;
+    width: 25%;
+}
+
+.leftsidetext {
+    float: left;
+    width: 75%;
+}
+
+.specslr1 {
+    border: 1px solid;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 3px;
+    padding: 10px;
+    width: 100%;
+}
+
+.solartablecss1 {
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+
+.marginwrap {
+    margin-right: 20px;
+}

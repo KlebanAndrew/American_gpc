@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html class="js" lang="en" dir="ltr">
+<head>
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>American Green Power Corporation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+
+        });
+
+        /*jQuery time*/
+$(document).ready(function(){
+	$("#accordian h3").click(function(){
+		//slide up all the link lists
+		$("#accordian ul ul").slideUp();
+		//slide down the link list below the h3 clicked - only if its closed
+		if(!$(this).next().is(":visible"))
+		{
+			$(this).next().slideDown();
+		}
+	})
+})
+    </script>
+
+ 
+</head>
+
+<body>
+
+ 
+	<div id="page" class="page clearfix">
+		
+			<div id="zone-content">
+			<header>
+				<div class="header">
+					<div class="mainflg">
+						<img class="logoadg" src="images/usa_made.png" />
+						<img class="logoadgowl" src="images/png_owl.png" />
+					<div class="mainslogan">
+						<a href="/"><span class="logofrmt">American Green Power </span><span class="logofrmt resz2">&reg;</span><br /><span class="logofrmt resz">Corporation</span></a>
+					</div>
+						<div class="languagedrpdwm">
+<dl id="sample" class="dropdown">
+        <dt><a href="#"><span>Please select your language</span></a></dt>
+        <dd>
+            <ul>
+                <li><a href="#">United States<img class="flag" src="css/flagimg/us.png" alt="" /><span class="value">US</span></a></li>
+                <li><a href="http://american-gpc.com/ue/about.html">Ukraine<img class="flag" src="css/flagimg/ue.png" alt="" /><span class="value">UE</span></a></li>
+                <li><a href="#">Belarus<img class="flag" src="css/flagimg/by.png" alt="" /><span class="value">BY</span></a></li>
+                <li><a href="#">Chezch<img class="flag" src="css/flagimg/ch.png" alt="" /><span class="value">CH</span></a></li>
+            </ul>
+        </dd>
+    </dl>
+    <span id="result"></span>
+					</div>
+				</div>
+				<div class="menumain">
+					<div>
+						<ul>
+						
+						<li class="menuli"><a href="http://american-gpc.com" class="menulink">HOME</a></li>
+						<li class="menuli"><a href="http://american-gpc.com" class="menulink">PRODUCTS</a></li>
+						<li class="menuli"><a href="http://american-gpc.com" class="menulink">AFFILIATES</a></li>
+						<li class="menuli"><a href="/about.html" class="menulink">ABOUT US</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		
+		
+						
+		<div class="maincont">
+<div class="clear"></div>
+					<div class="navcolumn">
+					<div id="accordian">
+						<ul>
+						<li class="active">
+							<h3><span class="icon-dashboard"></span>Solar Energy</h3>
+						<ul>
+							<li><a href="solar-panels.html">Solar Panels</a></li>
+							<li><a href="#">Spice Solar</a></li>
+							<li><a href="#">Micro Inverter</a></li>
+							<li><a href="#">Gateway</a></li>
+							<li><a href="#">Cloud Monitoring System</a></li>
+							<li><a href="learning.html">Learn</a></li>
+						</ul>
+						</li>
+						<!-- we will keep this LI open by default -->
+
+
+
+					</div>
+			</div>
+		<div class="maintextprod">
+				<strong>A typical "Series String" array </strong><br /><br />
+Most of the solar panels installed in The  World  now are configured like this, with one big inverter and one big DC voltage. If that 600V DC arcs then there's going to be a bang! And possibly a fire. (Which is why you should never skimp on installation cost)<br /><br />
+A typical "AC Solar Panel or Micro Inverter" array
+What's good about AC Panels and micro inverters?<br />
+There are a number of complexities caused by the traditional way of connecting solar panels together (in a series string) which Micro Inverters can help overcome including:<br /><br />
+High Voltage DC<br /><br />
+High Voltage DC can create a risk of very high temperature arcing and potentially fire. Because Micro Inverters convert to AC the potential for this to occur is greatly minimised.<br /><br />
+Switchgear<br /><br />
+High voltage DC requires relatively expensive protective switches and fuses. By using AC, switchgear is more commonly available and thus cheaper.<br /><br />
+Shading<br /><br />
+When solar panels are connected together in a series string, shading just one of them can dramatically affect the entire array; (kind of like standing on a hose).<br /><br />
+As an example: Here's an array of 3 solar panels connected to a conventional, central inverter. One of the panels has been pooed on by a bird, which could easily reduce its output by 50%. However, it will also reduce every other panels' output by the same amount:<br /><br />
+But by having a Micro Inverter on each solar panel, the outputs are completely independent of each other. So that bird poo is going to only affect the soiled panel:
+According to the US National Renewable Energy Laboratory, this effect can yield as much as 12% more energy.<br /><br />
+Solar panel mismatch<br /><br />
+When solar panels are made they each have slightly different electrical characteristics due to imperfect manufacturing tolerances. When you connect them together in series string, this effect is called "mismatch". Micro Inverters can adapt to the individual characteristics of each panel, avoiding mismatch.<br /><br />
+Maximum Power Point Tracking<br /><br />
+Like the effect of mismatch, different electrical characteristics also create different Maximum Power Points for each solar panel. The maximum Power Point is the perfect point for extracting maximum power from a solar panel and Micro Inverters attached to individual solar panels can therefore target this point better.<br /><br />
+Monitoring and fault finding<br /><br />
+Almost all inverters have some level of monitoring and fault finding however; it can only see the combined output from every solar panel in the series string. A Micro Inverter however, can monitor each solar panel individually, allowing you to easily identify exactly what's happening more quickly <br /><br />
+.Redundancy<br /><br />
+.If your series string inverter develops a fault, your entire solar array stops producing power until it is fixed. If a Micro Inverter develops a fault, the remaining Micro Inverters can continue to operate, so you should have a more reliable system.<br /><br />
+Modularity<br /><br />
+Series string inverters can only accept specific number of solar panels per inverter so it's not always possible to simply add a few more panels at a later date. AC Solar Panels however, can be added much more easily because they are independent of each other.
+ Longer Warranty<br /><br />
+
+Since micro-inverters are not exposed to as high power and heat loads as central inverter, they also tend to last significantly longer. Micro-inverters typically come with a warranty of 20-25 years - 15-20 years longer than central inverters.<br /><br />
+
+ Maximum Power Point Tracking (MPPT)<br /><br />
+
+One of the tricky things about solar cells is that voltage needs to be adjusted to light level for maximum output of power. In other words, the performance of a solar panel is dependent on the voltage load that is applied from the inverter. MPPT is a technique used to find the right voltage - the maximum power point. When MPPT is applied to each individual panel, as opposed to the solar system as a whole, performance will naturally increase.<br /><br />
+
+ Performance Reports<br /><br />
+
+Web-based monitoring on a panel-by-panel basis is usually available both for homeowner. Continuously analyzing the health of the solar system can pave the way for additional tweaks and performance improvements. There are even mobile applications that enable you to monitor your PV system when on the road.<br />
+		</div>
+						
+		</div><!-- end of pagecont -->
+			
+				<div class="footercontainer">
+				
+				<div class="footersecondcont">
+				
+					<div class="contone">
+							<div class="lefttoplinefooter"></div>
+							<div class="leftbottomlinefooter">
+								<span class="rightspanalign"><img src="images/footerpics/40px-Facebook_Logo.png"><img src="images/footerpics/linked.png"></span>
+								
+							</div>
+					</div>
+					
+						<div class="minilogofooter"><img src="images/footerpics/minifooterlogo.png" /></div>
+						
+						<div class="conttwo">
+							<div class="righttoplinefooter"></div>
+							<div class="rightbottomlinefooter">
+								<span class="rightspanalign"><p>US Federal Tax ID #: 47-2122528</p><br /><p>1717 Pennsylvania Ave NW Suite 1025, Washington, DC 20006</p>
+								<p>Tel: +1 (202) 559 9042</p>
+								<p class="emailtocls">Email: <script language='javascript' type='text/javascript'>
+var a = new Array('&#45;&#103;&#112;&#99;&#46;&#99;&#111;&#109;','&#101;&#32;&#105;&#110;&#102;&#111;&#32;&#102;&#114;&#111;&#109;&#32;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;&#x3f;&#x73;&#x75;&#x62;&#x6a;&#x65;&#x63;&#x74;&#x3d;&#x4d;&#x6f;&#x72;');
+document.write("<a href='"+a[2]+a[3]+a[1]+a[0]+"'>"+"&#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6d;&#x65;&#x72;&#x69;&#x63;&#x61;&#x6e;&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;"+"<"+"/a>");
+</script></p>
+								</span>
+							</div>
+						</div>	
+					
+				</div><!-- end of footersecondcont -->
+					
+					<div class="bottommainlinefooter"><span>Privacy Policy | External Links | Web Design by Webatask.com</span></div>
+			
+				</div>	<!-- END of .footercontainer -->
+			
+	</div> <!-- END of .zone-content -->
+
+
+		
+
+		
+	</div>
+	
+	<!-- prefix free to deal with vendor prefixes -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
+</body>
+
+</html> 

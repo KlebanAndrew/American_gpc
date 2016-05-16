@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="js" lang="en" dir="ltr">
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>American Green Power Corporation</title>
+
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//unslider.com/unslider.min.js"></script>
+
+
+
+</head>
+
+<body>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		//new function for cookie
+		function getCookie(name) {
+			var matches = document.cookie.match(new RegExp(
+					"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+			));
+			return matches ? decodeURIComponent(matches[1]) : undefined;
+		}
+
+		function setCookie(name, value, props) {
+			props = props || {};
+			var exp = props.expires;
+			if (typeof exp == "number" && exp) {
+				var d = new Date();
+				d.setTime(d.getTime() + exp*1000);
+				exp = props.expires = d;
+			}
+			if(exp && exp.toUTCString) { props.expires = exp.toUTCString(); }
+
+			value = encodeURIComponent(value);
+			var updatedCookie = name + "=" + value;
+			for(var propName in props){
+				updatedCookie += "; " + propName;
+				var propValue = props[propName];
+				if(propValue !== true){ updatedCookie += "=" + propValue; }
+			}
+			document.cookie = updatedCookie + ';path=/american-gpc';//todo get info about props args
+		}
+		//end
+
+		$(".dropdown img.flag").addClass("flagvisibility");
+
+		$(".dropdown dt a").click(function() {
+			$(".dropdown dd ul").toggle();
+		});
+
+		$(".dropdown dd ul li a").click(function() {
+			var text = $(this).html();
+			$(".dropdown dt a span").html(text);
+			$(".dropdown dd ul").hide();
+			$("#result").html("Selected value is: " + getSelectedValue("sample"));
+		});
+
+		function getSelectedValue(id) {
+			return $("#" + id).find("dt a span.value").html();
+		}
+
+		$(document).bind('click', function(e) {
+			var $clicked = $(e.target);
+			if (! $clicked.parents().hasClass("dropdown"))
+				$(".dropdown dd ul").hide();
+		});
+		$('.lang_href').click(function(){
+			var langname = $(this).prop('lang');console.log(langname);
+			setCookie('lang',langname);
+		});
+
+
+	});
+
+	/*jQuery time*/
+	$(document).ready(function(){
+		$("#accordian h3").click(function(){
+			//slide up all the link lists
+			$("#accordian ul ul").slideUp();
+			//slide down the link list below the h3 clicked - only if its closed
+			if(!$(this).next().is(":visible"))
+			{
+				$(this).next().slideDown();
+			}
+		})
+	})
+</script>
+<script>
+	$(function() {
+		$('.banner').unslider({
+			speed: 1000,               //  The speed to animate each slide (in milliseconds)
+			delay: 6000,              //  The delay between slide animations (in milliseconds)
+			complete: function() {},  //  A function that gets called after every slide animation
+			keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+			dots: true,               //  Display dot navigation
+			fluid: false              //  Support responsive design. May break non-responsive designs
+
+		});
+
+	});
+</script>
+
+<div id="page" class="page clearfix">
+
+	<div id="zone-content">
+		<header>
+			<div class="header">
+				<div class="mainflg">
+					<img class="logoadg" src="../images/usa_made.png" />
+					<img class="logoadgowl" src="../images/png_owl.png" />
+					<div class="mainslogan">
+						<a href="/"><span class="logofrmt">American Green Power </span><span class="logofrmt resz2">&reg;</span><br /><span class="logofrmt resz">Corporation</span></a>
+					</div>
+					<div class="languagedrpdwm">
+						<dl id="sample" class="dropdown">
+							<dt><a href="#"><span>Please select your language</span></a></dt>
+							<dd>
+								<ul>
+									<li><a class="lang_href" lang="eng" href="../eng">United States<img class="flag" src="../css/flagimg/us.png" alt="" /><span class="value">US</span></a></li>
+									<li><a class="lang_href" lang="ua" href="../ua">Ukraine<img class="flag" src="../css/flagimg/ue.png" alt="" /><span class="value">UE</span></a></li>
+									<li><a class="lang_href" lang="bl" href="../ru">Russia<img class="flag" src="../css/flagimg/by.png" alt="" /><span class="value">BY</span></a></li>
+									<li><a class="lang_href" lang="cz" href="#">Chezch<img class="flag" src="../css/flagimg/ch.png" alt="" /><span class="value">CH</span></a></li>
+								</ul>
+							</dd>
+						</dl>
+						<span id="result"></span>
+					</div>
+				</div>
+			</div>
+			<div class="menumain">
+				<div>
+					<ul>
+
+						<li class="menuli"><a href="./" class="menulink">HOME</a></li>
+						<li class="menuli"><a href="./" class="menulink">PRODUCTS</a></li>
+						<li class="menuli"><a href="./" class="menulink">AFFILIATES</a></li>
+						<li class="menuli"><a href="about.html" class="menulink">ABOUT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+
+
+		<div class="pagecont">
+
+			<a href="solar-energy.html" class="hrefbox">
+				<div class="featurebox1">
+					<div class="topboxbg">
+						<span class="topboxtxt">SOLAR PANELS & CHARGE CONTROLLERS</span>
+					</div>
+					<div class="mainboxbg">
+						<div class="boxpicalgn"><img src="../images/solapanels.jpg"></div>
+					</div>
+
+				</div>
+			</a>
+			<a href="solar-energy.html" class="hrefbox">
+				<div class="featurebox">
+					<div class="topboxbg">
+						<span class="topboxtxt">TESLA MOTORS</span>
+
+					</div>
+					<div class="mainboxbg">
+						<div class="boxpicalgn"><img src="../images/tesla.jpg"></div>
+					</div>
+
+
+				</div>
+			</a>
+
+			<a href="solar-panels.html" class="hrefbox">
+				<div class="featurebox">
+					<div class="topboxbg">
+						<span class="topboxtxt">WIND TURBINES</span>
+					</div>
+					<div class="mainboxbg">
+						<div class="boxpicalgn"><img src="../images/wind_turbines.jpg"></div>
+					</div>
+
+				</div>
+			</a>
+
+			<a href="solar-panels.html" class="hrefbox">
+				<div class="featurebox">
+					<div class="topboxbg">
+						<span class="topboxtxt">SOLAR STREET LIGHTS</span>
+					</div>
+					<div class="mainboxbg">
+						<div class="boxpicalgn"><img src="../images/solar_light.jpg"></div>
+					</div>
+
+				</div>
+			</a>
+
+		</div><!-- end of pagecont -->
+
+		<div class="footercontainer">
+
+			<div class="footersecondcont">
+
+				<div class="contone">
+					<div class="lefttoplinefooter"></div>
+					<div class="leftbottomlinefooter">
+								<span class="rightspanalign"><a href="https://www.facebook.com/americangreenpowercorp"><img src="../images/footerpics/40px-Facebook_Logo.png"></a>
+								<a href="https://www.linkedin.com/profile/view?id=384901050"><img src="../images/footerpics/linked.png"></a>
+								<a href="skype:echo123?call"><img src="../images/footerpics/skype_icon.png"></a>
+
+								</span>
+
+					</div>
+				</div>
+
+				<div class="minilogofooter"><img src="../images/footerpics/minifooterlogo.png" /></div>
+
+				<div class="conttwo">
+					<div class="righttoplinefooter"></div>
+					<div class="rightbottomlinefooter">
+								<span class="rightspanalign"><p>US Federal Tax ID #: 47-2122528</p><br /><p>1717 Pennsylvania Ave NW Suite 1025, Washington, DC 20006</p>
+								<p>Tel: +1 (202) 559 9042</p>
+								<p class="emailtocls">Email: <script language='javascript' type='text/javascript'>
+									var a = new Array('&#45;&#103;&#112;&#99;&#46;&#99;&#111;&#109;','&#101;&#32;&#105;&#110;&#102;&#111;&#32;&#102;&#114;&#111;&#109;&#32;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#109;&#101;&#114;&#105;&#99;&#97;&#110;','&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;&#x3f;&#x73;&#x75;&#x62;&#x6a;&#x65;&#x63;&#x74;&#x3d;&#x4d;&#x6f;&#x72;');
+									document.write("<a href='"+a[2]+a[3]+a[1]+a[0]+"'>"+"&#x69;&#x6e;&#x66;&#x6f;&#x40;&#x61;&#x6d;&#x65;&#x72;&#x69;&#x63;&#x61;&#x6e;&#x2d;&#x67;&#x70;&#x63;&#x2e;&#x63;&#x6f;&#x6d;"+"<"+"/a>");
+								</script></p>
+								</span>
+					</div>
+				</div>
+
+			</div><!-- end of footersecondcont -->
+
+			<div class="bottommainlinefooter"><span>Privacy Policy | External Links | Web Design by Webatask.com</span></div>
+
+		</div>	<!-- END of .footercontainer -->
+
+	</div> <!-- END of .zone-content -->
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
